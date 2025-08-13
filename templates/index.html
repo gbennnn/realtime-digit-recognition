@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MNIST Realtime Canvas</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>MNIST Handwritten Digit (Realtime)</h1>
+
+    <div class="tools">
+      <label>Brush size: <input id="brush" type="range" min="6" max="40" value="24"></label>
+      <button id="clear">Clear</button>
+      <label class="toggle">
+        <input id="rt" type="checkbox" checked> Realtime
+      </label>
+      <button id="predictBtn">Predict sekali</button>
+    </div>
+
+    <div class="stage">
+      <canvas id="canvas" width="280" height="280"></canvas>
+      <div class="panel">
+        <div class="big">
+          Prediksi: <span id="pred">-</span>
+        </div>
+        <div id="bars" class="bars"></div>
+      </div>
+    </div>
+
+    <p class="hint">Tip: tulis satu digit (0–9). Gunakan tombol Clear untuk menghapus.</p>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
