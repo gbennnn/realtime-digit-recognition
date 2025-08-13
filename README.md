@@ -9,7 +9,6 @@
 Aplikasi web interaktif untuk mengenali digit tulisan tangan menggunakan model CNN yang dilatih pada dataset MNIST.  
 Pengguna bisa menggambar langsung di canvas browser, dan model akan memprediksi digit secara **realtime**.
 
----
 
 ## Preview
 ![Preview App](static/preview.png) 
@@ -21,7 +20,6 @@ Pengguna bisa menggambar langsung di canvas browser, dan model akan memprediksi 
 - **Prediksi realtime** saat menggambar.
 - **Preprocessing**: cropping, scaling, dan padding agar input lebih mirip format MNIST.
 
----
 
 ## Instalasi & Menjalankan
 
@@ -55,7 +53,6 @@ Pengguna bisa menggambar langsung di canvas browser, dan model akan memprediksi 
 
    Buka browser di `http://127.0.0.1:5000`.
 
----
 
 ## Arsitektur Model
 
@@ -69,8 +66,6 @@ Model CNN sederhana:
 Optimizer: **Adam**
 Loss: **SparseCategoricalCrossentropy**
 Akurasi pada MNIST: ±98%.
-
----
 
 
 ## Lisensi
